@@ -1,0 +1,57 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: Arial;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #006699;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  margin-top: 60px;
+  height: calc(100% - 60px);
+}
+
+aside {
+  background-color: #f0f0f0;
+  width: 20%;
+  padding: 1em;
+}
+
+aside a {
+  display: block;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1;
+  min-width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 20px;
+}
+
+/* Responsive: stack sidebar on top */
+@media (max-width: 700px) {
+  .container { flex-direction: column; }
+  aside { width: 100%; }
+}

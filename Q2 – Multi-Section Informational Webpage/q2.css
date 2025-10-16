@@ -1,0 +1,41 @@
+body { margin: 0; font-family: Verdana; }
+
+header, footer {
+  text-align: center;
+  background-color: #006699;
+  color: white;
+  padding: 1em;
+}
+
+nav {
+  text-align: center;
+  background-color: #eee;
+  padding: 1em;
+}
+
+nav a { margin: 0 1em; text-decoration: none; color: #333; }
+
+section {
+  padding: 50px;
+  color: white;
+}
+
+.intro {
+  background: linear-gradient(to right, #0099cc, #003366);
+}
+
+.heritage {
+  background: radial-gradient(circle, #ff9933, #cc6600);
+  background-attachment: fixed;
+}
+
+.tourism {
+  background-image: url('kochi.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+footer {
+  background-color: #003366;
+  color: #fff;
+}

@@ -1,0 +1,73 @@
+body { margin: 0; font-family: Arial; }
+
+/* Sticky header */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #003366;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.hero {
+  background: url('hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
+
+.about img {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background-color: rgba(0, 102, 153, 0.1);
+}
+
+.service {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.contact {
+  padding: 40px;
+  text-align: center;
+}
+
+form input, form button {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

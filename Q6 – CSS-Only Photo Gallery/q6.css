@@ -1,0 +1,49 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+h1 {
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.image img {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+}
+
+/* Caption overlay appears on hover */
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  padding: 10px;
+  transition: opacity 0.3s;
+}
+
+.image:hover .caption {
+  opacity: 1;
+}

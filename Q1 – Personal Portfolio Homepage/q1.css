@@ -1,0 +1,48 @@
+/* Portfolio Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f4f8;
+  color: #222;
+}
+
+/* Fixed header stays on top */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #003366;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+main {
+  margin-top: 80px; /* space for fixed header */
+  text-align: center;
+}
+
+.bio img {
+  width: 20%;
+  border-radius: 50%;
+  margin: 1em 0;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

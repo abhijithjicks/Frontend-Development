@@ -1,0 +1,44 @@
+body { font-family: Arial; margin: 0; padding: 20px; }
+
+.pricing {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.plan {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  background-color: #f9f9f9;
+}
+
+.popular {
+  border: 2px solid #0099cc;
+  background-color: #e0f7fa;
+}
+
+.price { font-size: 1.5em; color: #006699; }
+
+a {
+  display: inline-block;
+  background-color: #006699;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+a:hover { background-color: #004466; }
+
+@media (max-width: 600px) {
+  .plan { width: 100%; margin-bottom: 20px; }
+}
