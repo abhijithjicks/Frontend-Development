@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery Bill Calculator</title>
+</head>
+<body>
+
+    <h2>Grocery Bill Calculator</h2>
+
+    <label>Enter Price: </label>
+    <input type="number" id="price"><br><br>
+
+    <label>Enter Quantity: </label>
+    <input type="number" id="quantity"><br><br>
+
+    <button onclick="calculateBill()">Calculate Bill</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function calculateBill() {
+            let price = Number(document.getElementById("price").value);
+            let qty = Number(document.getElementById("quantity").value);
+
+            // Step 1: Calculate total
+            let total = price * qty;
+
+            // Step 2: Apply discount if total > 1000
+            if (total > 1000) {
+                total = total - (total * 0.10); // 10% discount
+            }
+
+            // Step 3: Show final amount
+            document.getElementById("result").innerHTML =
+                "Final Amount: ₹" + total.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
